@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Roboto'; /*a name to be used later*/
+    src: url('http://fonts.googleapis.com/css?family=Roboto'); /*URL to font*/
+}
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+.tagline {
+	font-family: 'Roboto', sans-serif;
+
+}
+
+@keyframes blink{0%{opacity:1}50%{opacity:0}100%{opacity:1}}
+@-webkit-keyframes blink{0%{opacity:1}50%{opacity:0}100%{opacity:1}}
+@-moz-keyframes blink{0%{opacity:1}50%{opacity:0}100%{opacity:1}}
+
+
+
+.intro-divider {
+	vertical-align: center;
+	margin: auto
+}
+
+#links {
+	text-decoration: none;
+	margin-top: 75px;
+	border: none;
+	outline: none;
+}
+
+.links {
+	border-style: none; 
+	border: none; 
+	outline: none;
+}
+
+img{
+	height: 100%; 
+	border: none;
+	outline: none;
+}
+
+a:link {
+    text-decoration: none;
+    outline: none;
+    border: none; 
+}
+
+a:visited {
+    text-decoration: none;
+    outline: none;
+    border: none; 
+}
+
+a:hover {
+	outline: none;
+    text-decoration: none;
+    border: none; 
+}
+
+a:active {
+	outline: none;
+    text-decoration: none;
+    border: none; 
+}

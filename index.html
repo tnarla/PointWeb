@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="/imgs/website_preview.png" type="image/x-icon" />
+        <title>Food Compass</title></title>
+
+        <!-- jQuery -->
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/landing-page.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script type="text/javascript" src="js/scroll.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+          <style>
+      body {
+        font-family: 'Roboto', serif;
+        font-size: 120px;
+
+      }
+    </style>
+  <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+<link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
+
+    </head>
+    <body>
+
+
+
+    <div class="intro-header">
+        <div class="intro-background">
+          <div id="starfield">
+          </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                        <img src="imgs/screenshot_framed-2.png" class="logo">
+                        <img src= "imgs/arrow.png" class = "image">
+
+                               <style type="text/css">
+                               .container {position: relative;}
+                               .logo {position:absolute;
+                               max-width: 60%;
+                               height: auto;
+                               top: 30%;
+                                left: 50%;
+                                /* bring your own prefixes */
+                                transform: translate(-50%, -30%);
+                                z-index: 2;}
+                                .image {
+                                    z-index: 3;
+                                    position: absolute;
+                                    max-width: 30%;
+                                    width: 3%;
+                                    top: 31.5%;
+                                    left:57.5%;
+                                }
+                                #col-lg-12 {
+                                    z-index: 3;
+                                    position: absolute;
+                                }
+                                .google {
+                                    position: absolute;
+                                    top: 90%;
+                                    width: 10%;
+                                    left:50%;
+                                    transform: translate(-50%, -90%);
+                                }
+
+                               </style>
+
+
+                        <script>
+                        var img = $('.image');
+                        if(img.length > 0){
+                            var offset = img.offset();
+                            function mouse(evt){
+                                var center_x = (offset.left) + (img.width()/2);
+                                var center_y = (offset.top) + (img.height()/2);
+                                var mouse_x = evt.pageX; var mouse_y = evt.pageY;
+                                var radians = Math.atan2(mouse_x - center_x, mouse_y - center_y);
+                                var degree = (radians * (180 / Math.PI) * -1) + 180;
+                                img.css('-moz-transform', 'rotate('+degree+'deg)');
+                                img.css('-webkit-transform', 'rotate('+degree+'deg)');
+                                img.css('-o-transform', 'rotate('+degree+'deg)');
+                                img.css('-ms-transform', 'rotate('+degree+'deg)');
+                            }
+                            $(document).mousemove(mouse);
+                        }
+                        </script>
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+        <script src="js/bootstrap.min.js"></script>
+
+        <script type='text/javascript' src='js/jquery.particleground.js'></script>
+        <script type='text/javascript' src='js/starfield.js'></script>
+    </body>
+</html>
